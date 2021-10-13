@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00CB39582716C7A500CE75F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CB39572716C7A500CE75F8 /* AppDelegate.swift */; };
+		00CB395A2716C7A500CE75F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CB39592716C7A500CE75F8 /* SceneDelegate.swift */; };
+		00CB395C2716C7A500CE75F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CB395B2716C7A500CE75F8 /* ContentView.swift */; };
+		00CB395E2716C7AB00CE75F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00CB395D2716C7AB00CE75F8 /* Assets.xcassets */; };
+		00CB39612716C7AB00CE75F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00CB39602716C7AB00CE75F8 /* Preview Assets.xcassets */; };
+		00CB39642716C7AB00CE75F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CB39622716C7AB00CE75F8 /* LaunchScreen.storyboard */; };
+		00CB396F2716C7AC00CE75F8 /* AssistiveGimbalAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CB396E2716C7AC00CE75F8 /* AssistiveGimbalAppTests.swift */; };
+		00CB397A2716C7AC00CE75F8 /* AssistiveGimbalAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CB39792716C7AC00CE75F8 /* AssistiveGimbalAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00CB396B2716C7AC00CE75F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00CB394C2716C7A500CE75F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00CB39532716C7A500CE75F8;
+			remoteInfo = AssistiveGimbalApp;
+		};
+		00CB39762716C7AC00CE75F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00CB394C2716C7A500CE75F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00CB39532716C7A500CE75F8;
+			remoteInfo = AssistiveGimbalApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00CB39542716C7A500CE75F8 /* AssistiveGimbalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssistiveGimbalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00CB39572716C7A500CE75F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		00CB39592716C7A500CE75F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		00CB395B2716C7A500CE75F8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		00CB395D2716C7AB00CE75F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00CB39602716C7AB00CE75F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		00CB39632716C7AB00CE75F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00CB39652716C7AB00CE75F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00CB396A2716C7AC00CE75F8 /* AssistiveGimbalAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssistiveGimbalAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00CB396E2716C7AC00CE75F8 /* AssistiveGimbalAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistiveGimbalAppTests.swift; sourceTree = "<group>"; };
+		00CB39702716C7AC00CE75F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00CB39752716C7AC00CE75F8 /* AssistiveGimbalAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssistiveGimbalAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00CB39792716C7AC00CE75F8 /* AssistiveGimbalAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistiveGimbalAppUITests.swift; sourceTree = "<group>"; };
+		00CB397B2716C7AC00CE75F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00CB39512716C7A500CE75F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00CB39672716C7AC00CE75F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00CB39722716C7AC00CE75F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00CB394B2716C7A500CE75F8 = {
+			isa = PBXGroup;
+			children = (
+				00CB39562716C7A500CE75F8 /* AssistiveGimbalApp */,
+				00CB396D2716C7AC00CE75F8 /* AssistiveGimbalAppTests */,
+				00CB39782716C7AC00CE75F8 /* AssistiveGimbalAppUITests */,
+				00CB39552716C7A500CE75F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00CB39552716C7A500CE75F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00CB39542716C7A500CE75F8 /* AssistiveGimbalApp.app */,
+				00CB396A2716C7AC00CE75F8 /* AssistiveGimbalAppTests.xctest */,
+				00CB39752716C7AC00CE75F8 /* AssistiveGimbalAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00CB39562716C7A500CE75F8 /* AssistiveGimbalApp */ = {
+			isa = PBXGroup;
+			children = (
+				00CB39572716C7A500CE75F8 /* AppDelegate.swift */,
+				00CB39592716C7A500CE75F8 /* SceneDelegate.swift */,
+				00CB395B2716C7A500CE75F8 /* ContentView.swift */,
+				00CB395D2716C7AB00CE75F8 /* Assets.xcassets */,
+				00CB39622716C7AB00CE75F8 /* LaunchScreen.storyboard */,
+				00CB39652716C7AB00CE75F8 /* Info.plist */,
+				00CB395F2716C7AB00CE75F8 /* Preview Content */,
+			);
+			path = AssistiveGimbalApp;
+			sourceTree = "<group>";
+		};
+		00CB395F2716C7AB00CE75F8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				00CB39602716C7AB00CE75F8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		00CB396D2716C7AC00CE75F8 /* AssistiveGimbalAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				00CB396E2716C7AC00CE75F8 /* AssistiveGimbalAppTests.swift */,
+				00CB39702716C7AC00CE75F8 /* Info.plist */,
+			);
+			path = AssistiveGimbalAppTests;
+			sourceTree = "<group>";
+		};
+		00CB39782716C7AC00CE75F8 /* AssistiveGimbalAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00CB39792716C7AC00CE75F8 /* AssistiveGimbalAppUITests.swift */,
+				00CB397B2716C7AC00CE75F8 /* Info.plist */,
+			);
+			path = AssistiveGimbalAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00CB39532716C7A500CE75F8 /* AssistiveGimbalApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00CB397E2716C7AC00CE75F8 /* Build configuration list for PBXNativeTarget "AssistiveGimbalApp" */;
+			buildPhases = (
+				00CB39502716C7A500CE75F8 /* Sources */,
+				00CB39512716C7A500CE75F8 /* Frameworks */,
+				00CB39522716C7A500CE75F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AssistiveGimbalApp;
+			productName = AssistiveGimbalApp;
+			productReference = 00CB39542716C7A500CE75F8 /* AssistiveGimbalApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00CB39692716C7AC00CE75F8 /* AssistiveGimbalAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00CB39812716C7AC00CE75F8 /* Build configuration list for PBXNativeTarget "AssistiveGimbalAppTests" */;
+			buildPhases = (
+				00CB39662716C7AC00CE75F8 /* Sources */,
+				00CB39672716C7AC00CE75F8 /* Frameworks */,
+				00CB39682716C7AC00CE75F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00CB396C2716C7AC00CE75F8 /* PBXTargetDependency */,
+			);
+			name = AssistiveGimbalAppTests;
+			productName = AssistiveGimbalAppTests;
+			productReference = 00CB396A2716C7AC00CE75F8 /* AssistiveGimbalAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00CB39742716C7AC00CE75F8 /* AssistiveGimbalAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00CB39842716C7AC00CE75F8 /* Build configuration list for PBXNativeTarget "AssistiveGimbalAppUITests" */;
+			buildPhases = (
+				00CB39712716C7AC00CE75F8 /* Sources */,
+				00CB39722716C7AC00CE75F8 /* Frameworks */,
+				00CB39732716C7AC00CE75F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00CB39772716C7AC00CE75F8 /* PBXTargetDependency */,
+			);
+			name = AssistiveGimbalAppUITests;
+			productName = AssistiveGimbalAppUITests;
+			productReference = 00CB39752716C7AC00CE75F8 /* AssistiveGimbalAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00CB394C2716C7A500CE75F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Jo-Sheen Yen";
+				TargetAttributes = {
+					00CB39532716C7A500CE75F8 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					00CB39692716C7AC00CE75F8 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 00CB39532716C7A500CE75F8;
+					};
+					00CB39742716C7AC00CE75F8 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 00CB39532716C7A500CE75F8;
+					};
+				};
+			};
+			buildConfigurationList = 00CB394F2716C7A500CE75F8 /* Build configuration list for PBXProject "AssistiveGimbalApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00CB394B2716C7A500CE75F8;
+			productRefGroup = 00CB39552716C7A500CE75F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00CB39532716C7A500CE75F8 /* AssistiveGimbalApp */,
+				00CB39692716C7AC00CE75F8 /* AssistiveGimbalAppTests */,
+				00CB39742716C7AC00CE75F8 /* AssistiveGimbalAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00CB39522716C7A500CE75F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00CB39642716C7AB00CE75F8 /* LaunchScreen.storyboard in Resources */,
+				00CB39612716C7AB00CE75F8 /* Preview Assets.xcassets in Resources */,
+				00CB395E2716C7AB00CE75F8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00CB39682716C7AC00CE75F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00CB39732716C7AC00CE75F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00CB39502716C7A500CE75F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00CB39582716C7A500CE75F8 /* AppDelegate.swift in Sources */,
+				00CB395A2716C7A500CE75F8 /* SceneDelegate.swift in Sources */,
+				00CB395C2716C7A500CE75F8 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00CB39662716C7AC00CE75F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00CB396F2716C7AC00CE75F8 /* AssistiveGimbalAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00CB39712716C7AC00CE75F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00CB397A2716C7AC00CE75F8 /* AssistiveGimbalAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00CB396C2716C7AC00CE75F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00CB39532716C7A500CE75F8 /* AssistiveGimbalApp */;
+			targetProxy = 00CB396B2716C7AC00CE75F8 /* PBXContainerItemProxy */;
+		};
+		00CB39772716C7AC00CE75F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00CB39532716C7A500CE75F8 /* AssistiveGimbalApp */;
+			targetProxy = 00CB39762716C7AC00CE75F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		00CB39622716C7AB00CE75F8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00CB39632716C7AB00CE75F8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00CB397C2716C7AC00CE75F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00CB397D2716C7AC00CE75F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00CB397F2716C7AC00CE75F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AssistiveGimbalApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AssistiveGimbalApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JY.AssistiveGimbalApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00CB39802716C7AC00CE75F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AssistiveGimbalApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AssistiveGimbalApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JY.AssistiveGimbalApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		00CB39822716C7AC00CE75F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AssistiveGimbalAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JY.AssistiveGimbalAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AssistiveGimbalApp.app/AssistiveGimbalApp";
+			};
+			name = Debug;
+		};
+		00CB39832716C7AC00CE75F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AssistiveGimbalAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JY.AssistiveGimbalAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AssistiveGimbalApp.app/AssistiveGimbalApp";
+			};
+			name = Release;
+		};
+		00CB39852716C7AC00CE75F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AssistiveGimbalAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JY.AssistiveGimbalAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AssistiveGimbalApp;
+			};
+			name = Debug;
+		};
+		00CB39862716C7AC00CE75F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AssistiveGimbalAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JY.AssistiveGimbalAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AssistiveGimbalApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00CB394F2716C7A500CE75F8 /* Build configuration list for PBXProject "AssistiveGimbalApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00CB397C2716C7AC00CE75F8 /* Debug */,
+				00CB397D2716C7AC00CE75F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00CB397E2716C7AC00CE75F8 /* Build configuration list for PBXNativeTarget "AssistiveGimbalApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00CB397F2716C7AC00CE75F8 /* Debug */,
+				00CB39802716C7AC00CE75F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00CB39812716C7AC00CE75F8 /* Build configuration list for PBXNativeTarget "AssistiveGimbalAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00CB39822716C7AC00CE75F8 /* Debug */,
+				00CB39832716C7AC00CE75F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00CB39842716C7AC00CE75F8 /* Build configuration list for PBXNativeTarget "AssistiveGimbalAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00CB39852716C7AC00CE75F8 /* Debug */,
+				00CB39862716C7AC00CE75F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00CB394C2716C7A500CE75F8 /* Project object */;
+}
