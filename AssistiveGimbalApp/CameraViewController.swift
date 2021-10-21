@@ -154,8 +154,9 @@ class CameraViewController: UIViewController {
     
     @objc dynamic var videoDeviceInput: AVCaptureDeviceInput!
     
-    @IBOutlet private weak var previewView: PreviewView!
     
+    @IBOutlet weak var previewView: PreviewView!
+   
     // Call this on the session queue.
     /// - Tag: ConfigureSession
     private func configureSession() {

@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		00487F83271FDB43002EBF69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00487F82271FDB43002EBF69 /* Main.storyboard */; };
-		00487F85271FDB96002EBF69 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00487F84271FDB96002EBF69 /* PreviewView.swift */; };
 		00487F87271FDCCF002EBF69 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00487F86271FDCCF002EBF69 /* CameraViewController.swift */; };
+		0057C0652720E20A00B8E460 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0057C0642720E20A00B8E460 /* PreviewView.swift */; };
 		00CB39582716C7A500CE75F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CB39572716C7A500CE75F8 /* AppDelegate.swift */; };
 		00CB395A2716C7A500CE75F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CB39592716C7A500CE75F8 /* SceneDelegate.swift */; };
 		00CB395E2716C7AB00CE75F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00CB395D2716C7AB00CE75F8 /* Assets.xcassets */; };
-		00CB39612716C7AB00CE75F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00CB39602716C7AB00CE75F8 /* Preview Assets.xcassets */; };
 		00CB39642716C7AB00CE75F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CB39622716C7AB00CE75F8 /* LaunchScreen.storyboard */; };
 		00CB396F2716C7AC00CE75F8 /* AssistiveGimbalAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CB396E2716C7AC00CE75F8 /* AssistiveGimbalAppTests.swift */; };
 		00CB397A2716C7AC00CE75F8 /* AssistiveGimbalAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CB39792716C7AC00CE75F8 /* AssistiveGimbalAppUITests.swift */; };
@@ -38,13 +37,12 @@
 
 /* Begin PBXFileReference section */
 		00487F82271FDB43002EBF69 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		00487F84271FDB96002EBF69 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		00487F86271FDCCF002EBF69 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		0057C0642720E20A00B8E460 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PreviewView.swift; path = ../PreviewView.swift; sourceTree = "<group>"; };
 		00CB39542716C7A500CE75F8 /* AssistiveGimbalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssistiveGimbalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00CB39572716C7A500CE75F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00CB39592716C7A500CE75F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		00CB395D2716C7AB00CE75F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		00CB39602716C7AB00CE75F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		00CB39632716C7AB00CE75F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00CB39652716C7AB00CE75F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00CB396A2716C7AC00CE75F8 /* AssistiveGimbalAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssistiveGimbalAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,24 +102,15 @@
 			isa = PBXGroup;
 			children = (
 				00CB39572716C7A500CE75F8 /* AppDelegate.swift */,
+				0057C0642720E20A00B8E460 /* PreviewView.swift */,
 				00CB39592716C7A500CE75F8 /* SceneDelegate.swift */,
-				00487F84271FDB96002EBF69 /* PreviewView.swift */,
 				00487F86271FDCCF002EBF69 /* CameraViewController.swift */,
 				00487F82271FDB43002EBF69 /* Main.storyboard */,
 				00CB39622716C7AB00CE75F8 /* LaunchScreen.storyboard */,
 				00CB395D2716C7AB00CE75F8 /* Assets.xcassets */,
 				00CB39652716C7AB00CE75F8 /* Info.plist */,
-				00CB395F2716C7AB00CE75F8 /* Preview Content */,
 			);
 			path = AssistiveGimbalApp;
-			sourceTree = "<group>";
-		};
-		00CB395F2716C7AB00CE75F8 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				00CB39602716C7AB00CE75F8 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		00CB396D2716C7AC00CE75F8 /* AssistiveGimbalAppTests */ = {
@@ -247,7 +236,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				00CB39642716C7AB00CE75F8 /* LaunchScreen.storyboard in Resources */,
-				00CB39612716C7AB00CE75F8 /* Preview Assets.xcassets in Resources */,
 				00CB395E2716C7AB00CE75F8 /* Assets.xcassets in Resources */,
 				00487F83271FDB43002EBF69 /* Main.storyboard in Resources */,
 			);
@@ -275,8 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				00CB39582716C7A500CE75F8 /* AppDelegate.swift in Sources */,
+				0057C0652720E20A00B8E460 /* PreviewView.swift in Sources */,
 				00487F87271FDCCF002EBF69 /* CameraViewController.swift in Sources */,
-				00487F85271FDB96002EBF69 /* PreviewView.swift in Sources */,
 				00CB395A2716C7A500CE75F8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
