@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -14,17 +14,22 @@
             <objects>
                 <viewController storyboardIdentifier="PleaseWork" id="Y6W-OH-hqX" userLabel="Camera View Controller" customClass="CameraViewController" customModule="AssistiveGimbalApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hb3-nq-GLY" userLabel="Preview" customClass="PreviewView" customModule="AssistiveGimbalApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hb3-nq-GLY" userLabel="Preview" customClass="PreviewView" customModule="AssistiveGimbalApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Hb3-nq-GLY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Qjl-rO-tBn"/>
+                            <constraint firstItem="Hb3-nq-GLY" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="kYn-Xx-oxs"/>
+                            <constraint firstItem="Hb3-nq-GLY" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="qoc-kq-y33"/>
+                            <constraint firstItem="Hb3-nq-GLY" firstAttribute="bottom" secondItem="5EZ-qb-Rvc" secondAttribute="bottom" id="u5H-hS-Kxg"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="previewView" destination="Hb3-nq-GLY" id="Gn5-Kq-Av9"/>
@@ -32,7 +37,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="44.927536231884062" y="97.767857142857139"/>
+            <point key="canvasLocation" x="44" y="97.536945812807886"/>
         </scene>
     </scenes>
     <resources>

@@ -220,6 +220,7 @@ class CameraViewController: UIViewController {
                     }
                     
                     self.previewView.videoPreviewLayer.connection?.videoOrientation = initialVideoOrientation
+                    self.previewView.videoPreviewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
                 }
             } else {
                 print("Couldn't add video device input to the session.")
