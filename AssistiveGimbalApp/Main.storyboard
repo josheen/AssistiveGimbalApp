@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,24 +12,19 @@
         <!--Camera View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="PleaseWork" id="Y6W-OH-hqX" userLabel="Camera View Controller" customClass="CameraViewController" customModule="AssistiveGimbalApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PleaseWork" id="Y6W-OH-hqX" userLabel="Camera View Controller" customClass="ObjectDetectionViewController" customModule="AssistiveGimbalApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hb3-nq-GLY" userLabel="Preview" customClass="PreviewView" customModule="AssistiveGimbalApp" customModuleProvider="target">
+                            <view contentMode="scaleToFill" id="Hb3-nq-GLY" userLabel="Preview">
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Hb3-nq-GLY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Qjl-rO-tBn"/>
-                            <constraint firstItem="Hb3-nq-GLY" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="kYn-Xx-oxs"/>
-                            <constraint firstItem="Hb3-nq-GLY" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="qoc-kq-y33"/>
-                            <constraint firstItem="Hb3-nq-GLY" firstAttribute="bottom" secondItem="5EZ-qb-Rvc" secondAttribute="bottom" id="u5H-hS-Kxg"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="previewView" destination="Hb3-nq-GLY" id="Gn5-Kq-Av9"/>
