@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 import Vision
 
-class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
+class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate,AVCapturePhotoCaptureDelegate {
     
     var bufferSize: CGSize = .zero
     var rootLayer: CALayer! = nil
@@ -19,6 +19,7 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
     private let session = AVCaptureSession()
     private var previewLayer: AVCaptureVideoPreviewLayer! = nil
     private let videoDataOutput = AVCaptureVideoDataOutput()
+    private let photoOutput = AVCapturePhotoOutput()
     
     private let videoDataOutputQueue = DispatchQueue(label: "VideoDataOutput", qos: .userInitiated, attributes: [], autoreleaseFrequency: .workItem)
     
@@ -73,6 +74,9 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
             session.commitConfiguration()
             return
         }
+        if captureSession.canAddOutput(photoOutput) {
+                        captureSession.addOutput(photoOutput)
+                    }
         let captureConnection = videoDataOutput.connection(with: .video)
         // Always process the frames
         captureConnection?.isEnabled = true
@@ -125,5 +129,22 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
         }
         return exifOrientation
     }
+    
+    @objc private func handleTakePhoto() {
+            let photoSettings = AVCapturePhotoSettings()
+            if let photoPreviewType = photoSettings.availablePreviewPhotoPixelFormatTypes.first {
+                photoSettings.previewPhotoFormat = [kCVPixelBufferPixelFormatTypeKey as String: photoPreviewType]
+                photoOutput.capturePhoto(with: photoSettings, delegate: self)
+            }
+        }
+    
+    func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
+            guard let imageData = photo.fileDataRepresentation() else { return }
+            let previewImage = UIImage(data: imageData)
+            
+            let photoPreviewContainer = PhotoPreviewView(frame: self.view.frame)
+            photoPreviewContainer.photoImageView.image = previewImage
+            self.view.addSubviews(photoPreviewContainer)
+        }
 }
 
