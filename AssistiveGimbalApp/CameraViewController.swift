@@ -15,6 +15,12 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
     var bufferSize: CGSize = .zero
     var rootLayer: CALayer! = nil
     
+    lazy private var takePhotoButton: UIButton = {
+            let button = UIButton(type: .system)
+            button.setImage(UIImage(named: "capture_photo")?.withRenderingMode(.alwaysOriginal), for: .normal)
+            button.addTarget(self, action: #selector(handleTakePhoto), for: .touchUpInside)
+            return button
+        }()
     @IBOutlet weak private var previewView: UIView!
     private let session = AVCaptureSession()
     private var previewLayer: AVCaptureVideoPreviewLayer! = nil
@@ -34,6 +40,9 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAVCapture()
+        view.addSubview(takePhotoButton)
+        takePhotoButton.makeConstraints(top: nil, left: nil, right: nil, bottom: view.safeAreaLayoutGuide.bottomAnchor, topMargin: 0, leftMargin: 0, rightMargin: 0, bottomMargin: 15, width: 80, height: 80)
+        takePhotoButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     }
     
     override func didReceiveMemoryWarning() {
@@ -74,8 +83,8 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
             session.commitConfiguration()
             return
         }
-        if captureSession.canAddOutput(photoOutput) {
-                        captureSession.addOutput(photoOutput)
+        if session.canAddOutput(photoOutput) {
+                        session.addOutput(photoOutput)
                     }
         let captureConnection = videoDataOutput.connection(with: .video)
         // Always process the frames

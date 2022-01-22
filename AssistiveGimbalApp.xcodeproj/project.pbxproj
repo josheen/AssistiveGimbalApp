@@ -12,6 +12,8 @@
 		0085B6A32764456900CCE4C7 /* YOLOv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0085B6A22764456900CCE4C7 /* YOLOv3.mlmodel */; };
 		0085B6A5276467BC00CCE4C7 /* ObjectDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0085B6A4276467BC00CCE4C7 /* ObjectDetectionViewController.swift */; };
 		0085B6AB27646A9100CCE4C7 /* hypers.png in Resources */ = {isa = PBXBuildFile; fileRef = 0085B6AA27646A9100CCE4C7 /* hypers.png */; };
+		0093D37E279B70650098E8F7 /* PhotoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0093D37D279B70650098E8F7 /* PhotoPreviewView.swift */; };
+		0093D382279B71E70098E8F7 /* UIViewExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0093D381279B71E60098E8F7 /* UIViewExtentions.swift */; };
 		00CB39582716C7A500CE75F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CB39572716C7A500CE75F8 /* AppDelegate.swift */; };
 		00CB395A2716C7A500CE75F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CB39592716C7A500CE75F8 /* SceneDelegate.swift */; };
 		00CB395E2716C7AB00CE75F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00CB395D2716C7AB00CE75F8 /* Assets.xcassets */; };
@@ -43,6 +45,8 @@
 		0085B6A22764456900CCE4C7 /* YOLOv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YOLOv3.mlmodel; sourceTree = "<group>"; };
 		0085B6A4276467BC00CCE4C7 /* ObjectDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetectionViewController.swift; sourceTree = "<group>"; };
 		0085B6AA27646A9100CCE4C7 /* hypers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hypers.png; sourceTree = "<group>"; };
+		0093D37D279B70650098E8F7 /* PhotoPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPreviewView.swift; sourceTree = "<group>"; };
+		0093D381279B71E60098E8F7 /* UIViewExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtentions.swift; sourceTree = "<group>"; };
 		00CB39542716C7A500CE75F8 /* AssistiveGimbalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssistiveGimbalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00CB39572716C7A500CE75F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00CB39592716C7A500CE75F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,7 +112,9 @@
 				00CB39572716C7A500CE75F8 /* AppDelegate.swift */,
 				00CB39592716C7A500CE75F8 /* SceneDelegate.swift */,
 				00487F86271FDCCF002EBF69 /* CameraViewController.swift */,
+				0093D37D279B70650098E8F7 /* PhotoPreviewView.swift */,
 				0085B6A4276467BC00CCE4C7 /* ObjectDetectionViewController.swift */,
+				0093D381279B71E60098E8F7 /* UIViewExtentions.swift */,
 				00487F82271FDB43002EBF69 /* Main.storyboard */,
 				00CB39622716C7AB00CE75F8 /* LaunchScreen.storyboard */,
 				0085B6A22764456900CCE4C7 /* YOLOv3.mlmodel */,
@@ -271,8 +277,10 @@
 			files = (
 				0085B6A32764456900CCE4C7 /* YOLOv3.mlmodel in Sources */,
 				00CB39582716C7A500CE75F8 /* AppDelegate.swift in Sources */,
+				0093D382279B71E70098E8F7 /* UIViewExtentions.swift in Sources */,
 				0085B6A5276467BC00CCE4C7 /* ObjectDetectionViewController.swift in Sources */,
 				00487F87271FDCCF002EBF69 /* CameraViewController.swift in Sources */,
+				0093D37E279B70650098E8F7 /* PhotoPreviewView.swift in Sources */,
 				00CB395A2716C7A500CE75F8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
