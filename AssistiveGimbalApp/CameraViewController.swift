@@ -13,7 +13,6 @@ import Vision
 class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate,AVCapturePhotoCaptureDelegate {
     
     var bufferSize: CGSize = .zero
-    var rootLayer: CALayer! = nil
     
     lazy private var takePhotoButton: UIButton = {
             let button = UIButton(type: .system)
@@ -91,7 +90,7 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
         captureConnection?.isEnabled = true
         do {
             try  videoDevice!.lockForConfiguration()
-            let dimensions = CMVideoFormatDescriptionGetDimensions((videoDevice?.activeFormat.formatDescription)!)
+            let dimensions = self.view.frame
             bufferSize.width = CGFloat(dimensions.width)
             bufferSize.height = CGFloat(dimensions.height)
             videoDevice!.unlockForConfiguration()
@@ -100,10 +99,9 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
         }
         session.commitConfiguration()
         previewLayer = AVCaptureVideoPreviewLayer(session: session)
+        previewLayer.frame = self.view.frame
         previewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
-        rootLayer = previewView.layer
-        previewLayer.frame = rootLayer.bounds
-        rootLayer.addSublayer(previewLayer)
+        self.view.layer.addSublayer(previewLayer)
     }
     
     func startCaptureSession() {

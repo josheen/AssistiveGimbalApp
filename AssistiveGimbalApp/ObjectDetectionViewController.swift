@@ -101,12 +101,12 @@ class ObjectDetectionViewController: CameraViewController {
                                          y: 0.0,
                                          width: bufferSize.width,
                                          height: bufferSize.height)
-        detectionOverlay.position = CGPoint(x: rootLayer.bounds.midX, y: rootLayer.bounds.midY)
-        rootLayer.addSublayer(detectionOverlay)
+        detectionOverlay.position = CGPoint(x: self.view.layer.bounds.midX, y: self.view.layer.bounds.midY)
+        self.view.layer.addSublayer(detectionOverlay)
     }
     
     func updateLayerGeometry() {
-        let bounds = rootLayer.bounds
+        let bounds = self.view.layer.bounds
         var scale: CGFloat
         
         let xScale: CGFloat = bounds.size.width / bufferSize.height
